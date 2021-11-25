@@ -1,0 +1,21 @@
+{
+    "configurations": [
+    {
+        "type": "lldb",
+        "request": "launch",
+        "name": "Debug",
+        "program": "${workspaceFolder}/target/debug/gbemu.exe",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "sourceLanguages": ["rust"],
+        
+    }
+    ],
+    "compounds": [
+        {
+            "name": "Build",
+            "configurations": ["Debug"],
+            "preLaunchTask": "${defaultBuildTask}"
+        }
+    ]
+}
