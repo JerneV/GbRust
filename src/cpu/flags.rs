@@ -20,6 +20,13 @@ impl Flags {
             carry: false,
         }
     }
+
+    pub fn reset(&mut self){
+        self.zero = false;
+        self.subtract = false;
+        self.half_carry = false;
+        self.carry = false;
+    }
 }
 
 impl std::convert::From<Flags> for u8 {
